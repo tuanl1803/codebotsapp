@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<angularbotUi:UserInterfaceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:angularbotUi="http://codebots.com/emf/angularbot/ui" TargetProject="helloapp" />
+<angularbotUi:UserInterfaceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:angularbotUi="http://codebots.com/emf/angularbot/ui" Uuid="4b623234-5e1a-11ea-c0a7-6d6f75736579" TargetProject="helloapp">
+  <Pages xsi:type="angularbotUi:Page" Uuid="0f622aed-f703-4f67-90f5-aaaae79fc314" Name="Tank" Title="Tank" Description="Tank's page"/>
+  <Pages xsi:type="angularbotUi:Page" Uuid="97670045-8e71-41fd-ac35-1d0c07808150" Name="Species" Title="Species" Description="Species's page"/>
+  <Pages xsi:type="angularbotUi:Page" Uuid="2761e7e7-ab36-4887-a214-14c3423aac52" Name="Fish" Title="Fish" Description="The fish's page" IsHomePage="true"/>
+  <Tiles xsi:type="angularbotUi:TileCustom" Uuid="ad52579e-842a-4020-9317-4cf755f1983b" Name="Tank Wrapping Tile" IsDefaultTile="true">
+    <ViewElements xsi:type="angularbotUi:View" Uuid="8edb7528-1844-4b97-cfd5-0a05bb13f580" Name="Tank Wrapping View" DefaultView="true"/>
+  </Tiles>
+  <Tiles xsi:type="angularbotUi:TileCrud" Uuid="10e8ab60-2541-4752-8907-bad5cdd54175" Name="Tank">
+    <Entity href="../entity/helloapp.springbotentity#5d1595b4-920b-410d-8fd6-86d94e9dd3b5"/>
+  </Tiles>
+  <Tiles xsi:type="angularbotUi:TileCustom" Uuid="db3dc8b1-0b62-4de9-fc57-4de7619693dc" Name="Species Wrapping Tile" IsDefaultTile="true">
+    <ViewElements xsi:type="angularbotUi:View" Uuid="4a23d9db-bda5-4749-da25-4417632e9aa6" Name="Species Wrapping View" DefaultView="true"/>
+  </Tiles>
+  <Tiles xsi:type="angularbotUi:TileCrud" Uuid="7ac21b6d-bba8-4331-8580-30ac1b6286cb" Name="Species">
+    <Entity href="../entity/helloapp.springbotentity#288a26ed-f5ab-4104-9a3f-47a6dabd11f0"/>
+  </Tiles>
+  <Tiles xsi:type="angularbotUi:TileCustom" Uuid="10c3c225-3b66-498a-dba9-a01b8f714126" Name="Fish Wrapping Tile" IsDefaultTile="true">
+    <ViewElements xsi:type="angularbotUi:View" Uuid="2e29937d-a867-40f8-adc0-3f78aef0dcc1" Name="Fish Wrapping View" DefaultView="true"/>
+  </Tiles>
+  <Tiles xsi:type="angularbotUi:TileCrud" Uuid="88677401-ef15-4eea-8c0d-3831704136b4" Name="Fish">
+    <Entity href="../entity/helloapp.springbotentity#d3790bf2-11cf-488e-a365-80ba79def318"/>
+  </Tiles>
+  <ReferenceViewViewElements xsi:type="angularbotUi:ReferenceViewTile" Uuid="402b52cf-7fac-4c06-bc50-24f7914fa2d7" DisplayIndex="1" Source="8edb7528-1844-4b97-cfd5-0a05bb13f580" Target="10e8ab60-2541-4752-8907-bad5cdd54175"/>
+  <ReferenceViewViewElements xsi:type="angularbotUi:ReferenceViewTile" Uuid="a9ab40a2-035e-4d2c-ae19-741d72dcfe73" DisplayIndex="1" Source="4a23d9db-bda5-4749-da25-4417632e9aa6" Target="7ac21b6d-bba8-4331-8580-30ac1b6286cb"/>
+  <ReferenceViewViewElements xsi:type="angularbotUi:ReferenceViewTile" Uuid="2c2974de-43a7-497e-9450-069a0aec6c46" DisplayIndex="1" Source="2e29937d-a867-40f8-adc0-3f78aef0dcc1" Target="88677401-ef15-4eea-8c0d-3831704136b4"/>
+  <ReferencePageTiles xsi:type="angularbotUi:ReferencePageTile" Uuid="b7df7604-feb3-49b3-bb5b-c393858dd7e8" Source="0f622aed-f703-4f67-90f5-aaaae79fc314" Target="ad52579e-842a-4020-9317-4cf755f1983b"/>
+  <ReferencePageTiles xsi:type="angularbotUi:ReferencePageTile" Uuid="c83b82e9-8e1b-4f8d-84c0-bae84e820884" Source="97670045-8e71-41fd-ac35-1d0c07808150" Target="db3dc8b1-0b62-4de9-fc57-4de7619693dc"/>
+  <ReferencePageTiles xsi:type="angularbotUi:ReferencePageTile" Uuid="a3875574-f614-429f-b8f5-b87f29abacf1" Source="2761e7e7-ab36-4887-a214-14c3423aac52" Target="10c3c225-3b66-498a-dba9-a01b8f714126"/>
+</angularbotUi:UserInterfaceModel>

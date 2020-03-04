@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<commonSecurity:Security xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:commonSecurity="http://codebots.com/emf/security">
-  <Authentication/>
-  <Authorization/>
+<commonSecurity:Security xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commonSecurity="http://codebots.com/emf/security">
+  <Authentication>
+    <Authentication xsi:type="commonSecurity:LocalAuthentication" Uuid="4b627df2-5e1a-11ea-ad4c-6d6f75736579"/>
+  </Authentication>
+  <Authorization>
+    <Acl Uuid="c6e083d7-8894-48ca-8862-03756b2119e9" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="5d1595b4-920b-410d-8fd6-86d94e9dd3b5" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="fa555b05-d424-438b-b4a6-4fbb699f5797" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="5d1595b4-920b-410d-8fd6-86d94e9dd3b5" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="553e7779-538f-4d1c-a915-f90612829600" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="2761e7e7-ab36-4887-a214-14c3423aac52" Read="true"/>
+    <Acl Uuid="87d2e2fb-a814-41c7-9da9-254542d09df2" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="2761e7e7-ab36-4887-a214-14c3423aac52" Read="true"/>
+    <Acl Uuid="fd3ad13a-3b11-4d0f-ab48-f06d43968aa6" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="97670045-8e71-41fd-ac35-1d0c07808150" Read="true"/>
+    <Acl Uuid="f82f40e5-b213-42d5-bf18-ac56cacc0ef5" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="97670045-8e71-41fd-ac35-1d0c07808150" Read="true"/>
+    <Acl Uuid="3ec64d52-54e6-4d2c-907e-bda50966f232" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="d3790bf2-11cf-488e-a365-80ba79def318" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="a4353ef0-6286-4572-8f19-99891dbcf15e" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="d3790bf2-11cf-488e-a365-80ba79def318" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="7db1977b-467a-4a31-9da3-df3dfd85f640" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="89c81ed4-f557-4b78-88d3-1d29cfa02c93" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="cf056156-0916-42fa-a65f-2c51467d5051" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="2ce88f1a-db7c-4126-9ce4-d472030d48ed" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="a515750d-3cae-4169-a4a0-560810abf120" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="288a26ed-f5ab-4104-9a3f-47a6dabd11f0" Create="true" Read="true" Update="true" Delete="true"/>
+  </Authorization>
   <Auditing/>
-  <SecuritySchemes/>
+  <SecuritySchemes>
+    <SecuritySchemes Uuid="5d1595b4-920b-410d-8fd6-86d94e9dd3b5" Name="Tank Entity">
+      <Object href="../entity/helloapp.springbotentity#5d1595b4-920b-410d-8fd6-86d94e9dd3b5"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="288a26ed-f5ab-4104-9a3f-47a6dabd11f0" Name="Species Entity">
+      <Object href="../entity/helloapp.springbotentity#288a26ed-f5ab-4104-9a3f-47a6dabd11f0"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="89c81ed4-f557-4b78-88d3-1d29cfa02c93" Name="Fishnatic Entity">
+      <Object href="../entity/helloapp.springbotentity#89c81ed4-f557-4b78-88d3-1d29cfa02c93"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="d3790bf2-11cf-488e-a365-80ba79def318" Name="Fish Entity">
+      <Object href="../entity/helloapp.springbotentity#d3790bf2-11cf-488e-a365-80ba79def318"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="2ce88f1a-db7c-4126-9ce4-d472030d48ed" Name="Admin Entity">
+      <Object href="../entity/helloapp.springbotentity#2ce88f1a-db7c-4126-9ce4-d472030d48ed"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="2761e7e7-ab36-4887-a214-14c3423aac52" Name="Fish">
+      <Object href="../ui/helloapp.angularbotui#2761e7e7-ab36-4887-a214-14c3423aac52"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="97670045-8e71-41fd-ac35-1d0c07808150" Name="Species">
+      <Object href="../ui/helloapp.angularbotui#97670045-8e71-41fd-ac35-1d0c07808150"/>
+    </SecuritySchemes>
+  </SecuritySchemes>
+  <TwoFactorAuthenticationProviders/>
   <Groups>
-    <Groups Name="Visitors"/>
+    <Groups Uuid="4b62bb28-5e1a-11ea-86e8-6d6f75736579" Name="Visitors" Description="Anonymous users who have not been authenticated" IsSpecialGroup="UNAUTHENTICATED"/>
+    <Groups Uuid="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" Name="Fishnatic" Description="Users who have been created as a Fishnatic entity">
+      <UserEntities href="../entity/helloapp.springbotentity#89c81ed4-f557-4b78-88d3-1d29cfa02c93"/>
+    </Groups>
+    <Groups Uuid="ce48d3b0-626c-4134-84e8-8ae1e98963e0" Name="Admin" Description="Users who have been created as an Admin entity">
+      <UserEntities href="../entity/helloapp.springbotentity#2ce88f1a-db7c-4126-9ce4-d472030d48ed"/>
+    </Groups>
   </Groups>
 </commonSecurity:Security>
