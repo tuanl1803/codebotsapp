@@ -1,2 +1,0 @@
-# codebotsapp
-Demo codebots app
