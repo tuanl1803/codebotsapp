@@ -46,6 +46,8 @@ export const appRoutes: Routes = [
 				],
 				data: {
 					expectedRoles: [
+						'ADMIN',
+						'FISHNATIC',
 						// % protected region % [Add additional roles here] off begin
 						// % protected region % [Add additional roles here] end
 					],

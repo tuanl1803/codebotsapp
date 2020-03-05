@@ -971,6 +971,7 @@ export class SpeciesTileCrudComponent implements OnInit {
 
 		const allowedGroups = [
 			'FISHNATIC',
+			'ADMIN',
 		];
 
 		return this.authenticationService.isPermitted(allowedGroups);
@@ -985,6 +986,7 @@ export class SpeciesTileCrudComponent implements OnInit {
 
 		const allowedGroups = [
 			'FISHNATIC',
+			'ADMIN',
 		];
 
 		return this.authenticationService.isPermitted(allowedGroups);
@@ -999,6 +1001,7 @@ export class SpeciesTileCrudComponent implements OnInit {
 
 		const allowedGroups = [
 			'FISHNATIC',
+			'ADMIN',
 		];
 
 		return this.authenticationService.isPermitted(allowedGroups);

@@ -29,18 +29,21 @@ import {RoleGuard} from '../../../lib/guards/role.guard';
 
 const rolesAllowedToRead = [
 	'FISHNATIC',
+	'ADMIN',
 	// % protected region % [Add any additional roles allowed to read here] off begin
 	// % protected region % [Add any additional roles allowed to read here] end
 ];
 
 const rolesAllowedToEdit = [
 	'FISHNATIC',
+	'ADMIN',
 	// % protected region % [Add any additional roles allowed to edit here] off begin
 	// % protected region % [Add any additional roles allowed to edit here] end
 ];
 
 const rolesAllowedToCreate = [
 	'FISHNATIC',
+	'ADMIN',
 	// % protected region % [Add any additional roles allowed to create here] off begin
 	// % protected region % [Add any additional roles allowed to create here] end
 ];
@@ -48,7 +51,6 @@ const rolesAllowedToCreate = [
 
 const appRoutes: Routes = [
 	// % protected region % [Configure routing for crud tile here] off begin
-	
 	{
 		path: 'species-crud',
 		children: [

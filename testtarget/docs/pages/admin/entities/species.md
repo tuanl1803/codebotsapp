@@ -36,6 +36,7 @@ Details regarding a given Species.
 | Group  | Create | Read | Update | Delete |
 | ---- | :----: | :----:  | :----:  | :----:  |
 | Fishnatic | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |
+| Admin | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |
 
 ## List of Records
 

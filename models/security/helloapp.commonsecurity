@@ -15,6 +15,9 @@
     <Acl Uuid="7db1977b-467a-4a31-9da3-df3dfd85f640" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="89c81ed4-f557-4b78-88d3-1d29cfa02c93" Create="true" Read="true" Update="true" Delete="true"/>
     <Acl Uuid="cf056156-0916-42fa-a65f-2c51467d5051" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="2ce88f1a-db7c-4126-9ce4-d472030d48ed" Create="true" Read="true" Update="true" Delete="true"/>
     <Acl Uuid="a515750d-3cae-4169-a4a0-560810abf120" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="288a26ed-f5ab-4104-9a3f-47a6dabd11f0" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="6ec8eebb-8410-410a-9f63-f1f0e9653cb7" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="288a26ed-f5ab-4104-9a3f-47a6dabd11f0" Create="true" Read="true" Update="true" Delete="true"/>
+    <Acl Uuid="87de6f3a-7df5-4283-bf5c-c2f9b367d5e7" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="0f622aed-f703-4f67-90f5-aaaae79fc314" Read="true"/>
+    <Acl Uuid="9193483d-dc9b-419e-b67a-c32ef8b3dc41" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="0f622aed-f703-4f67-90f5-aaaae79fc314" Read="true"/>
   </Authorization>
   <Auditing/>
   <SecuritySchemes>
@@ -38,6 +41,9 @@
     </SecuritySchemes>
     <SecuritySchemes Uuid="97670045-8e71-41fd-ac35-1d0c07808150" Name="Species">
       <Object href="../ui/helloapp.angularbotui#97670045-8e71-41fd-ac35-1d0c07808150"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="0f622aed-f703-4f67-90f5-aaaae79fc314" Name="Tank Page">
+      <Object href="../ui/helloapp.angularbotui#0f622aed-f703-4f67-90f5-aaaae79fc314"/>
     </SecuritySchemes>
   </SecuritySchemes>
   <TwoFactorAuthenticationProviders/>

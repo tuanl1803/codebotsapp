@@ -453,6 +453,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				admin_AdminEntity_Admin.setAllowRead(true);
 				adminPrivileges.add(admin_AdminEntity_Admin);
 
+				PrivilegeEntity admin_SpeciesEntity_Species = new PrivilegeEntity();
+				admin_SpeciesEntity_Species.setId(UUID.randomUUID());
+				admin_SpeciesEntity_Species.setName("ROLE_ADMIN_SPECIES_ENTITY_SPECIES");
+				admin_SpeciesEntity_Species.setTargetEntity("SpeciesEntity");
+				admin_SpeciesEntity_Species.setAllowCreate(true);
+				admin_SpeciesEntity_Species.setAllowDelete(true);
+				admin_SpeciesEntity_Species.setAllowUpdate(true);
+				admin_SpeciesEntity_Species.setAllowRead(true);
+				adminPrivileges.add(admin_SpeciesEntity_Species);
+
 
 				admin.setPrivileges(adminPrivileges);
 				unsavedRoles.put("ADMIN", admin);
