@@ -46,12 +46,14 @@ import {FrontendModule} from './frontend/frontend.module';
 import {AdminModule} from './admin/admin.module';
 import {AdminHomePageModule} from './admin/pages/adminHome/home.admin.page.module';
 // TODO change to relative path and  lazy loading
-import {TankAdminPageModule} from './admin/pages/tank/tank.admin.page.module';
 import {FishAdminPageModule} from './admin/pages/fish/fish.admin.page.module';
+import {TankAdminPageModule} from './admin/pages/tank/tank.admin.page.module';
 import {SpeciesAdminPageModule} from './admin/pages/species/species.admin.page.module';
 import {FishnaticAdminPageModule} from './admin/pages/fishnatic/fishnatic.admin.page.module';
 import {AdminAdminPageModule} from './admin/pages/admin/admin.admin.page.module';
 
+import {StatsPageModule} from './pages/stats/stats.page.module';
+import {WelcomePageModule} from './pages/welcome/welcome.page.module';
 import {TankPageModule} from './pages/tank/tank.page.module';
 import {SpeciesPageModule} from './pages/species/species.page.module';
 import {FishPageModule} from './pages/fish/fish.page.module';
@@ -141,11 +143,13 @@ if (environment.production) {
 		LogoutTileModule,
 		CommonComponentModule,
 		AdminHomePageModule,
+		StatsPageModule,
+		WelcomePageModule,
 		TankPageModule,
 		SpeciesPageModule,
 		FishPageModule,
-		TankAdminPageModule,
 		FishAdminPageModule,
+		TankAdminPageModule,
 		SpeciesAdminPageModule,
 		FishnaticAdminPageModule,
 		AdminAdminPageModule,

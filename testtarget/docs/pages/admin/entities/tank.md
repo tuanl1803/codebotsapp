@@ -33,6 +33,7 @@ Details regarding a given Tank.
 | Width | NUMBER | 1.41 | <i class="fa fa-times"> | <ul></ul> | The tank's width | 
 | Length | NUMBER | 1.41 | <i class="fa fa-times"> | <ul></ul> | The tank's length | 
 | Height | NUMBER | 1.41 | <i class="fa fa-times"> | <ul></ul> | The tank's height | 
+| Clean | STRING | Sally | <i class="fa fa-times"> | <ul></ul> | Tank status | 
 
 
 ## Security

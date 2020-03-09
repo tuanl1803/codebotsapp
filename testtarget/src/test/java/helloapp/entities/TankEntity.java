@@ -16,6 +16,7 @@
  */
 package helloapp.entities;
 
+import helloapp.entities.enums.*;
 import lombok.*;
 
 import java.util.*;
@@ -70,6 +71,11 @@ public class TankEntity extends AbstractEntity {
 	@ToString.Include
 	// % protected region % [Modify attribute annotation for Height here] end
 	private Double height;
+
+	// % protected region % [Modify attribute annotation for Clean here] off begin
+	@ToString.Include
+	// % protected region % [Modify attribute annotation for Clean here] end
+	private CleanEnum clean;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//

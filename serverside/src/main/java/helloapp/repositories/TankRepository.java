@@ -20,6 +20,7 @@ import helloapp.entities.TankEntity;
 import org.springframework.stereotype.Repository;
 
 import javax.validation.constraints.NotNull;
+import helloapp.entities.enums.*;
 import java.util.Optional;
 import java.util.List;
 
@@ -62,6 +63,14 @@ public interface TankRepository extends AbstractRepository<TankEntity> {
 	 * @return a list of entities that have the given attribute Height
 	 */
 	List<TankEntity> findByHeight(@NotNull Double height);
+
+	/**
+	 * Return an entity or a list of entities that have the given attribute Clean.
+	 *
+	 * @param clean the attribute against which the entities will be retrieved
+	 * @return a list of entities that have the given attribute Clean
+	 */
+	List<TankEntity> findByClean(@NotNull CleanEnum clean);
 
 	// % protected region % [Add any additional class methods here] off begin
 	// % protected region % [Add any additional class methods here] end

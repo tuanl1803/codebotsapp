@@ -18,6 +18,10 @@
     <Acl Uuid="6ec8eebb-8410-410a-9f63-f1f0e9653cb7" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="288a26ed-f5ab-4104-9a3f-47a6dabd11f0" Create="true" Read="true" Update="true" Delete="true"/>
     <Acl Uuid="87de6f3a-7df5-4283-bf5c-c2f9b367d5e7" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="0f622aed-f703-4f67-90f5-aaaae79fc314" Read="true"/>
     <Acl Uuid="9193483d-dc9b-419e-b67a-c32ef8b3dc41" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="0f622aed-f703-4f67-90f5-aaaae79fc314" Read="true"/>
+    <Acl Uuid="d3354420-b3ca-4458-819c-b4403484baf6" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="f01c19bb-d0c6-4c9f-9c41-2548f8037934" Read="true"/>
+    <Acl Uuid="8463d28c-5f99-41d1-8213-bc6755e574eb" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="f01c19bb-d0c6-4c9f-9c41-2548f8037934" Read="true"/>
+    <Acl Uuid="1008c4a1-52f3-4b0e-82cb-b878048b9ff6" Group="e5cb5c91-b0e7-4d4a-b4d6-756df3174887" SecurityScheme="d09547c8-13d9-4cbe-b6e3-16d089096146" Read="true"/>
+    <Acl Uuid="d34c710c-59ae-4db0-9ce0-0ecc7a700471" Group="ce48d3b0-626c-4134-84e8-8ae1e98963e0" SecurityScheme="d09547c8-13d9-4cbe-b6e3-16d089096146" Read="true"/>
   </Authorization>
   <Auditing/>
   <SecuritySchemes>
@@ -44,6 +48,12 @@
     </SecuritySchemes>
     <SecuritySchemes Uuid="0f622aed-f703-4f67-90f5-aaaae79fc314" Name="Tank Page">
       <Object href="../ui/helloapp.angularbotui#0f622aed-f703-4f67-90f5-aaaae79fc314"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="f01c19bb-d0c6-4c9f-9c41-2548f8037934" Name="Welcome">
+      <Object href="../ui/helloapp.angularbotui#f01c19bb-d0c6-4c9f-9c41-2548f8037934"/>
+    </SecuritySchemes>
+    <SecuritySchemes Uuid="d09547c8-13d9-4cbe-b6e3-16d089096146" Name="Stats">
+      <Object href="../ui/helloapp.angularbotui#d09547c8-13d9-4cbe-b6e3-16d089096146"/>
     </SecuritySchemes>
   </SecuritySchemes>
   <TwoFactorAuthenticationProviders/>

@@ -16,6 +16,7 @@
  */
 import {FormGroup, Validators} from '@angular/forms';
 import {Group, AbstractModel, ModelProperty, ModelPropertyType, ModelRelation, ModelRelationType} from '../../lib/models/abstract.model';
+import {CleanEnum, cleanEnumArray} from '../../enums/clean.enum';
 import {FishModel} from '../fish/fish.model';
 import * as _ from 'lodash';
 import {QueryOperation, Where} from '../../lib/services/http/interfaces';
@@ -80,6 +81,11 @@ export class TankModel extends AbstractModel {
 	 * {docoDescription=TODO: Get doco description, springFoxDataTypeProperty=, position=5, example=1.41}.
 	 */
 	height: number;
+
+	/**
+	 * {docoDescription=TODO: Get doco description, springFoxDataTypeProperty=, position=6, example=Sally}.
+	 */
+	clean: CleanEnum;
 
 	fishTankIds: string[] = [];
 
@@ -190,6 +196,30 @@ export class TankModel extends AbstractModel {
 				// % protected region % [Add any additional model attribute properties for Height here] off begin
 				// % protected region % [Add any additional model attribute properties for Height here] end
 			},
+			{
+				name: 'clean',
+				// % protected region % [Set displayName for Clean here] off begin
+				displayName: 'Clean',
+				// % protected region % [Set displayName for Clean here] end
+				type: ModelPropertyType.ENUM,
+				enumLiterals: cleanEnumArray,
+				// TODO maybe consider to change to the enum
+				// % protected region % [Set display element type for Clean here] off begin
+				elementType: ElementType.ENUM,
+				// % protected region % [Set display element type for Clean here] end
+				// % protected region % [Set isSensitive for Clean here] off begin
+				isSensitive: false,
+				// % protected region % [Set isSensitive for Clean here] end
+				// % protected region % [Set readonly for Clean here] off begin
+				readOnly: false,
+				// % protected region % [Set readonly for Clean here] end
+				validators: [
+					// % protected region % [Add other validators for Clean here] off begin
+					// % protected region % [Add other validators for Clean here] end
+				],
+				// % protected region % [Add any additional model attribute properties for Clean here] off begin
+				// % protected region % [Add any additional model attribute properties for Clean here] end
+			},
 			// % protected region % [Add any additional class field names here] off begin
 			// % protected region % [Add any additional class field names here] end
 		]);
@@ -293,6 +323,8 @@ export class TankModel extends AbstractModel {
 			this.width = json.width;
 			this.length = json.length;
 			this.height = json.height;
+			this.clean = json.clean;
+			this.clean = json.clean;
 			this.fishTankIds = json.fishTankIds;
 			// % protected region % [Add any additional logic here after set the data] off begin
 			// % protected region % [Add any additional logic here after set the data] end
@@ -309,6 +341,7 @@ export class TankModel extends AbstractModel {
 			width: this.width,
 			length: this.length,
 			height: this.height,
+			clean: this.clean,
 			fishTankIds: this.fishTankIds,
 			// % protected region % [Add any additional logic here to json] off begin
 			// % protected region % [Add any additional logic here to json] end

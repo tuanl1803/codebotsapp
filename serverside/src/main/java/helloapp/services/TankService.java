@@ -40,6 +40,7 @@ import javax.validation.Validator;
 import com.google.common.collect.Sets;
 import com.querydsl.core.types.ExpressionUtils;
 import com.querydsl.core.types.Predicate;
+import helloapp.entities.enums.*;
 import helloapp.entities.FishEntity;
 import helloapp.repositories.FishRepository;
 
@@ -205,6 +206,26 @@ public class TankService extends AbstractService<TankEntity, TankRepository, Tan
 
 		// % protected region % [Add any additional logic for findByHeight before returning the entities here] off begin
 		// % protected region % [Add any additional logic for findByHeight before returning the entities here] end
+
+		return entities;
+	}
+
+	/**
+	 * Return an entity or a list of entities that have the given attribute Clean.
+	 *
+	 * @param clean the attribute against which the entities will be retrieved
+	 * @return a list of entities that have the given attribute Clean
+	 */
+	@PreAuthorize("hasPermission('TankEntity', 'read')")
+	@Transactional(readOnly = true)
+	public List<TankEntity> findByClean(CleanEnum clean) {
+		// % protected region % [Add any additional logic for findByClean before the main body here] off begin
+		// % protected region % [Add any additional logic for findByClean before the main body here] end
+
+		List<TankEntity> entities = Lists.newArrayList(repository.findByClean(clean));
+
+		// % protected region % [Add any additional logic for findByClean before returning the entities here] off begin
+		// % protected region % [Add any additional logic for findByClean before returning the entities here] end
 
 		return entities;
 	}

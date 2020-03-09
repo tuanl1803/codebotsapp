@@ -16,6 +16,7 @@
  */
 package helloapp.entities;
 
+import helloapp.entities.enums.*;
 import helloapp.entities.listeners.TankEntityListener;
 import helloapp.serializers.TankSerializer;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -88,6 +89,15 @@ public class TankEntity extends AbstractEntity {
 	@ToString.Include
 	// % protected region % [Modify attribute annotation for Height here] end
 	private Double height;
+
+	// % protected region % [Modify attribute annotation for Clean here] off begin
+	@Nullable
+	@Column(name = "clean")
+	@ApiModelProperty(notes = "The Clean of this entity.")
+	@ToString.Include
+	@Enumerated
+	// % protected region % [Modify attribute annotation for Clean here] end
+	private CleanEnum clean;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//

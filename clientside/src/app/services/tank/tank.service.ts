@@ -72,6 +72,7 @@ export class TankService extends AbstractHttpService<TankModel, TankModelAudit> 
 				width
 				length
 				height
+				clean
 			}
 			${super.fragments('Tank').properties}
 		`,

@@ -16,6 +16,7 @@
  */
 package helloapp.entities;
 
+import helloapp.entities.enums.*;
 import helloapp.entities.listeners.FishEntityListener;
 import helloapp.serializers.FishSerializer;
 import helloapp.deserializers.DateTimeDeserializer;
@@ -83,6 +84,15 @@ public class FishEntity extends AbstractEntity {
 	@ToString.Include
 	// % protected region % [Modify attribute annotation for Alive here] end
 	private Boolean alive;
+
+	// % protected region % [Modify attribute annotation for Born here] off begin
+	@Nullable
+	@Column(name = "born")
+	@ApiModelProperty(notes = "The Born of this entity.")
+	@ToString.Include
+	@Enumerated
+	// % protected region % [Modify attribute annotation for Born here] end
+	private BornEnum born;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//

@@ -48,8 +48,8 @@ public class CustomInjectorSource implements InjectorSource {
 				.withBootstrapModule(new CustomBootstrapModule())
 				.withModules(
 						new BaseModule(),
-						new TankModule(),
 						new FishModule(),
+						new TankModule(),
 						new SpeciesModule(),
 						new FishnaticModule(),
 						new AdminModule(),

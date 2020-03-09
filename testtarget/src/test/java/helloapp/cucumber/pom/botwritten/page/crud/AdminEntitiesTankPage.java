@@ -61,6 +61,8 @@ public class AdminEntitiesTankPage extends CrudPage {
 	// TODO default handling dataAttribute heightField;
 	@FindBy(how = How.XPATH, using = "//input[@id='height-field']")
 	private WebElement heightField;
+	@FindBy(how = How.XPATH, using = "//ng-select[@id='clean-field']")
+	private WebElement cleanField;
 
 	// Outgoing one-to-one
 
@@ -116,6 +118,7 @@ public class AdminEntitiesTankPage extends CrudPage {
 		// TODO default handling for dataAttribute heightField
 		heightField.sendKeys(entity.getHeight().toString());
 
+		DropdownUtils.selectOptionByName(webDriver, cleanField, entity.getClean().getLiteralValue());
 
 		saveButton.click();
 	}
