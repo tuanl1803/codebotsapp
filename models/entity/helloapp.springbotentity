@@ -15,6 +15,7 @@
     <Attributes xsi:type="springbotEntity:AttributeDecimal" Uuid="83d95596-fdfc-463e-bce8-0cf9f2b8efcd" Name="Width" DocoDescription="The tank's width"/>
     <Attributes xsi:type="springbotEntity:AttributeDecimal" Uuid="5488a33e-6ff0-44a6-abfb-04c9e23e14fa" Name="Length" DocoDescription="The tank's length"/>
     <Attributes xsi:type="springbotEntity:AttributeDecimal" Uuid="dd8e5053-8b62-4cce-b06b-7fc0d9763fe8" Name="Height" DocoDescription="The tank's height"/>
+    <Attributes xsi:type="springbotEntity:AttributeDate" Uuid="1733347e-6eb6-4872-a316-521b7a6bd8c4" Name="Last Cleaned" DocoDescription="The last cleaned date."/>
     <Attributes xsi:type="springbotEntity:AttributeEnum" Uuid="254473e4-ae16-4429-b090-eac41ed45012" Name="Clean" DocoDescription="Tank status"/>
   </Entities>
   <Entities xsi:type="springbotEntity:Entity" Uuid="288a26ed-f5ab-4104-9a3f-47a6dabd11f0" Name="Species" DocoDescription="A species of fish" OrderBy="f632184f-2d8f-447d-80b2-b6c0e9f49f50">

@@ -23,6 +23,7 @@ type Tank {
 	width: Float
 	length: Float
 	height: Float
+	lastCleaned: String
 	clean: String
 	
 	fishTank: [Fish]
@@ -47,6 +48,7 @@ input TankInput {
 	width: Float
 	length: Float
 	height: Float
+	lastCleaned: String
 	clean: String
 	
 	fishTank: [FishInput]

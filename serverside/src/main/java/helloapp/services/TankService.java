@@ -41,6 +41,7 @@ import com.google.common.collect.Sets;
 import com.querydsl.core.types.ExpressionUtils;
 import com.querydsl.core.types.Predicate;
 import helloapp.entities.enums.*;
+import java.time.*;
 import helloapp.entities.FishEntity;
 import helloapp.repositories.FishRepository;
 
@@ -206,6 +207,26 @@ public class TankService extends AbstractService<TankEntity, TankRepository, Tan
 
 		// % protected region % [Add any additional logic for findByHeight before returning the entities here] off begin
 		// % protected region % [Add any additional logic for findByHeight before returning the entities here] end
+
+		return entities;
+	}
+
+	/**
+	 * Return an entity or a list of entities that have the given attribute Last Cleaned.
+	 *
+	 * @param lastCleaned the attribute against which the entities will be retrieved
+	 * @return a list of entities that have the given attribute Last Cleaned
+	 */
+	@PreAuthorize("hasPermission('TankEntity', 'read')")
+	@Transactional(readOnly = true)
+	public List<TankEntity> findByLastCleaned(OffsetDateTime lastCleaned) {
+		// % protected region % [Add any additional logic for findByLastCleaned before the main body here] off begin
+		// % protected region % [Add any additional logic for findByLastCleaned before the main body here] end
+
+		List<TankEntity> entities = Lists.newArrayList(repository.findByLastCleaned(lastCleaned));
+
+		// % protected region % [Add any additional logic for findByLastCleaned before returning the entities here] off begin
+		// % protected region % [Add any additional logic for findByLastCleaned before returning the entities here] end
 
 		return entities;
 	}
