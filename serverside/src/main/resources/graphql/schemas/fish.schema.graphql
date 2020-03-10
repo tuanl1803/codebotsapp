@@ -25,7 +25,8 @@ type Fish {
 	born: String
 	tank: Tank
 	species: Species
-	# % protected region % [Add any additional field definition here] off begin
+	# % protected region % [Add any additional field definition here] one begin
+	getFishByAliveAndPurchased: [Fish!]!
 	# % protected region % [Add any additional field definition here] end
 }
 
