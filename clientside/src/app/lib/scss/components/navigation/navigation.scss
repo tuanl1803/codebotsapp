@@ -22,7 +22,7 @@ Styling for basic navigation, vertical navigation and horizontal navigation.
 */
 
 /****** General navigation styling shared amongst all navigation *****/
-// % protected region % [Change generic navigation styles here] off begin
+// % protected region % [Change generic navigation styles here] on begin
 .nav {
 	background-color: $color-brand-03;
 	display: flex;
@@ -83,6 +83,19 @@ Styling for basic navigation, vertical navigation and horizontal navigation.
 		}
 	}
 }
+.nav {
+	ul {
+		li {
+
+			a {
+				color: $white;
+			}
+
+			@import "sublinks-navigation.scss";
+		}
+	}
+}
+	@import "expanded-navigation.scss";
 // % protected region % [Change generic navigation styles here] end
 
 /****** Horizontal navigation (usually placed left) *****/

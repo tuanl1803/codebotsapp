@@ -20,7 +20,9 @@ import {CommonModule} from "@angular/common";
 import {CommonComponentModule} from '../../../lib/components/common.component.module';
 import {WelcomeTileComponent} from './welcome.tile.component';
 
-// % protected region % [Add any additional imports here] off begin
+// % protected region % [Add any additional imports here] on begin
+import {RouterModule} from '@angular/router';
+import { StatsTileModule } from '../stats/stats.tile.module';
 // % protected region % [Add any additional imports here] end
 
 @NgModule({
@@ -32,7 +34,9 @@ import {WelcomeTileComponent} from './welcome.tile.component';
 	imports: [
 		CommonModule,
 		CommonComponentModule,
-		// % protected region % [Add any additional module imports here] off begin
+		// % protected region % [Add any additional module imports here] on begin
+		RouterModule,
+		StatsTileModule,
 		// % protected region % [Add any additional module imports here] end
 	],
 	exports: [

@@ -39,7 +39,8 @@ export class FishModel extends AbstractModel {
 	 */
 	// TODO add the searchable in the Metamodel
 	static searchFields: string[] = [
-		// % protected region % [Add any additional searchable field names here] off begin
+		// % protected region % [Add any additional searchable field names here] on begin
+		'speciesName'
 		// % protected region % [Add any additional searchable field names here] end
 	];
 
