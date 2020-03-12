@@ -1,3 +1,5 @@
+$spacing-xl:  calc(3.25 * 1em);
+$spacing-md:  calc(1.25 * 1em);
 
 .welcome-tile {
     height: 100%;
@@ -9,7 +11,7 @@
     justify-content: center;
     align-content: center;
     display: flex;
-    //margin-bottom: $spacing-xl;
+    margin-bottom: $spacing-xl;
    
     &:after {
     font-size: 2rem;
@@ -20,9 +22,9 @@
    
     .btn {
     width: 40%;
-    //margin: $spacing-md;
+    margin: $spacing-md;
     &:first-of-type {
-            //margin: $spacing-md;
+            margin: $spacing-md;
     }
     }
     }

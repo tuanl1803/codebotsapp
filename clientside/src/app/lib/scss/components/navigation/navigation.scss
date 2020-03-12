@@ -83,19 +83,7 @@ Styling for basic navigation, vertical navigation and horizontal navigation.
 		}
 	}
 }
-.nav {
-	ul {
-		li {
-
-			a {
-				color: $white;
-			}
-
-			@import "sublinks-navigation.scss";
-		}
-	}
-}
-	@import "expanded-navigation.scss";
+@import "expanded-navigation.scss";
 // % protected region % [Change generic navigation styles here] end
 
 /****** Horizontal navigation (usually placed left) *****/
