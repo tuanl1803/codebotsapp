@@ -50,8 +50,8 @@ Anonymous users who have not been authenticated
 | Fish | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Tank | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Species | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
-| Fishnatic | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Admin | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
+| Fishnatic | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Role | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Privilege | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | User | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
@@ -67,8 +67,8 @@ Users who have been created as a Fishnatic entity
 | Fish | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Tank | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Species | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
-| Fishnatic | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Admin | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
+| Fishnatic | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Role | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Privilege | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | User | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
@@ -85,8 +85,8 @@ Users who belong to the admin group have access to the admin section of the appl
 | Fish | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Tank | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Species | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
-| Fishnatic | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Admin | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
+| Fishnatic | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Role | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | Privilege | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |
 | User | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> | <i class="fa fa-times"> |

@@ -34,16 +34,16 @@ import {
 	SpeciesModelState,
 	initialState as SpeciesModelInitialState
 } from './species/species.model.state';
-import {FishnaticEffect} from './fishnatic/fishnatic.model.effect';
-import {
-	FishnaticModelState,
-	initialState as FishnaticModelInitialState
-} from './fishnatic/fishnatic.model.state';
 import {AdminEffect} from './admin/admin.model.effect';
 import {
 	AdminModelState,
 	initialState as AdminModelInitialState
 } from './admin/admin.model.state';
+import {FishnaticEffect} from './fishnatic/fishnatic.model.effect';
+import {
+	FishnaticModelState,
+	initialState as FishnaticModelInitialState
+} from './fishnatic/fishnatic.model.state';
 import {RoleEffect} from './role/role.model.effect';
 import {
 	RoleModelState,
@@ -111,8 +111,8 @@ export interface ModelState {
 	FishModel: FishModelState;
 	TankModel: TankModelState;
 	SpeciesModel: SpeciesModelState;
-	FishnaticModel: FishnaticModelState;
 	AdminModel: AdminModelState;
+	FishnaticModel: FishnaticModelState;
 	RoleModel: RoleModelState;
 	PrivilegeModel: PrivilegeModelState;
 }
@@ -136,15 +136,15 @@ export const initialModelState: ModelState = {
 		// % protected region % [Add any additional state for model Species here] off begin
 		// % protected region % [Add any additional state for model Species here] end
 	},
-	FishnaticModel: {
-		...FishnaticModelInitialState,
-		// % protected region % [Add any additional state for model Fishnatic here] off begin
-		// % protected region % [Add any additional state for model Fishnatic here] end
-	},
 	AdminModel: {
 		...AdminModelInitialState,
 		// % protected region % [Add any additional state for model Admin here] off begin
 		// % protected region % [Add any additional state for model Admin here] end
+	},
+	FishnaticModel: {
+		...FishnaticModelInitialState,
+		// % protected region % [Add any additional state for model Fishnatic here] off begin
+		// % protected region % [Add any additional state for model Fishnatic here] end
 	},
 	RoleModel: {
 		...RoleModelInitialState,
@@ -177,8 +177,8 @@ export const effects = [
 	FishEffect,
 	TankEffect,
 	SpeciesEffect,
-	FishnaticEffect,
 	AdminEffect,
+	FishnaticEffect,
 	RoleEffect,
 	PrivilegeEffect,
 	// % protected region % [Add any additional effects here] off begin

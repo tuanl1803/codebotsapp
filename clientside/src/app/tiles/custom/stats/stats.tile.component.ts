@@ -39,7 +39,6 @@ import { FishModelState } from 'src/app/models/fish/fish.model.state';
 })
 export class StatsTileComponent {
 	// % protected region % [Add any additional class fields here] on begin
-
 	aliveFishes: Observable<FishModel[]>;
 	aliveFishesCount: number = 0;
 	aliveFishesId = 'alive-fish';

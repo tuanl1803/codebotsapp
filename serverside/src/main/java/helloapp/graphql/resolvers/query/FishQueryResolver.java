@@ -185,7 +185,6 @@ public class FishQueryResolver implements GraphQLQueryResolver {
 
 
 	// % protected region % [Import any additional class methods here] on begin
-
     /**
      * Return a list of {@link FishEntity} entities.
      *

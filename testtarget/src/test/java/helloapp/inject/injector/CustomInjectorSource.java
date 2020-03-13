@@ -51,8 +51,8 @@ public class CustomInjectorSource implements InjectorSource {
 						new FishModule(),
 						new TankModule(),
 						new SpeciesModule(),
-						new FishnaticModule(),
 						new AdminModule(),
+						new FishnaticModule(),
 						new RoleModule(),
 						new PrivilegeModule(),
 						CucumberModules.createScenarioModule()

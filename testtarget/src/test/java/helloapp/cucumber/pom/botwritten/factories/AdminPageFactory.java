@@ -24,9 +24,9 @@ public class AdminPageFactory {
 	@Inject
 	EntitiesSpeciesListPage entitiesSpeciesListPage;
 	@Inject
-	UsersFishnaticListPage usersFishnaticListPage;
-	@Inject
 	UsersAdminListPage usersAdminListPage;
+	@Inject
+	UsersFishnaticListPage usersFishnaticListPage;
 
 
 	public CrudListPage createCrudPage(String name) throws Exception {
@@ -38,10 +38,10 @@ public class AdminPageFactory {
 				return entitiesTankListPage;
 			case "Species":
 				return entitiesSpeciesListPage;
-			case "Fishnatic":
-				return usersFishnaticListPage;
 			case "Admin":
 				return usersAdminListPage;
+			case "Fishnatic":
+				return usersFishnaticListPage;
 			default :
 				throw new Exception(String.format("Unexpected Crud list Page: %s", name));
 		}

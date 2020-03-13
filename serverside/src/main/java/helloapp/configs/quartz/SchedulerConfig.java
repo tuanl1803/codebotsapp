@@ -39,7 +39,6 @@ import java.util.Properties;
 
 // % protected region % [Add any additional imports here] off begin
 import helloapp.jobs.SimpleJob;
-import helloapp.jobs.TankCheckJob;
 // % protected region % [Add any additional imports here] end
 
 @Configuration

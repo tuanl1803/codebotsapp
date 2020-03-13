@@ -42,12 +42,12 @@ public class GraphQLCombiner {
 	private final SpeciesResolver speciesResolver;
 	private final SpeciesQueryResolver speciesQueryResolver;
 	private final SpeciesMutationResolver speciesMutationResolver;
-	private final FishnaticResolver fishnaticResolver;
-	private final FishnaticQueryResolver fishnaticQueryResolver;
-	private final FishnaticMutationResolver fishnaticMutationResolver;
 	private final AdminResolver adminResolver;
 	private final AdminQueryResolver adminQueryResolver;
 	private final AdminMutationResolver adminMutationResolver;
+	private final FishnaticResolver fishnaticResolver;
+	private final FishnaticQueryResolver fishnaticQueryResolver;
+	private final FishnaticMutationResolver fishnaticMutationResolver;
 	private final RoleResolver roleResolver;
 	private final RoleQueryResolver roleQueryResolver;
 	private final RoleMutationResolver roleMutationResolver;
@@ -69,12 +69,12 @@ public class GraphQLCombiner {
 			SpeciesResolver speciesResolver,
 			SpeciesQueryResolver speciesQueryResolver,
 			SpeciesMutationResolver speciesMutationResolver,
-			FishnaticResolver fishnaticResolver,
-			FishnaticQueryResolver fishnaticQueryResolver,
-			FishnaticMutationResolver fishnaticMutationResolver,
 			AdminResolver adminResolver,
 			AdminQueryResolver adminQueryResolver,
 			AdminMutationResolver adminMutationResolver,
+			FishnaticResolver fishnaticResolver,
+			FishnaticQueryResolver fishnaticQueryResolver,
+			FishnaticMutationResolver fishnaticMutationResolver,
 			RoleResolver roleResolver,
 			RoleQueryResolver roleQueryResolver,
 			RoleMutationResolver roleMutationResolver,
@@ -91,12 +91,12 @@ public class GraphQLCombiner {
 		this.speciesResolver = speciesResolver;
 		this.speciesQueryResolver = speciesQueryResolver;
 		this.speciesMutationResolver = speciesMutationResolver;
-		this.fishnaticResolver = fishnaticResolver;
-		this.fishnaticQueryResolver = fishnaticQueryResolver;
-		this.fishnaticMutationResolver = fishnaticMutationResolver;
 		this.adminResolver = adminResolver;
 		this.adminQueryResolver = adminQueryResolver;
 		this.adminMutationResolver = adminMutationResolver;
+		this.fishnaticResolver = fishnaticResolver;
+		this.fishnaticQueryResolver = fishnaticQueryResolver;
+		this.fishnaticMutationResolver = fishnaticMutationResolver;
 		this.roleResolver = roleResolver;
 		this.roleQueryResolver = roleQueryResolver;
 		this.roleMutationResolver = roleMutationResolver;
@@ -112,8 +112,8 @@ public class GraphQLCombiner {
 				.file("graphql/schemas/fish.schema.graphql")
 				.file("graphql/schemas/tank.schema.graphql")
 				.file("graphql/schemas/species.schema.graphql")
-				.file("graphql/schemas/fishnatic.schema.graphql")
 				.file("graphql/schemas/admin.schema.graphql")
+				.file("graphql/schemas/fishnatic.schema.graphql")
 				.file("graphql/schemas/role.schema.graphql")
 				.file("graphql/schemas/privilege.schema.graphql")
 				.resolvers(fishResolver)
@@ -125,12 +125,12 @@ public class GraphQLCombiner {
 				.resolvers(speciesResolver)
 				.resolvers(speciesQueryResolver)
 				.resolvers(speciesMutationResolver)
-				.resolvers(fishnaticResolver)
-				.resolvers(fishnaticQueryResolver)
-				.resolvers(fishnaticMutationResolver)
 				.resolvers(adminResolver)
 				.resolvers(adminQueryResolver)
 				.resolvers(adminMutationResolver)
+				.resolvers(fishnaticResolver)
+				.resolvers(fishnaticQueryResolver)
+				.resolvers(fishnaticMutationResolver)
 				.resolvers(roleResolver)
 				.resolvers(roleQueryResolver)
 				.resolvers(roleMutationResolver)

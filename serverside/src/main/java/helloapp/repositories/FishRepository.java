@@ -18,6 +18,7 @@ package helloapp.repositories;
 
 import helloapp.entities.FishEntity;
 import org.springframework.stereotype.Repository;
+
 import javax.validation.constraints.NotNull;
 import helloapp.entities.enums.*;
 import java.time.*;
@@ -68,10 +69,5 @@ public interface FishRepository extends AbstractRepository<FishEntity> {
 	List<FishEntity> findByBorn(@NotNull BornEnum born);
 
 	// % protected region % [Add any additional class methods here] off begin
-	default List findByAliveAndPurchased() {
-		QFishEntity fishEntity = QFishEntity.fishEntity;
-		Predicate predicate = fishEntity.alive.eq(true).and(fishEntity.born.eq(BornEnum.PURCHASED));
-		return Lists.newArrayList(this.findAll(predicate));
-	}
 	// % protected region % [Add any additional class methods here] end
 }

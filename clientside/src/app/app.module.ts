@@ -49,8 +49,8 @@ import {AdminHomePageModule} from './admin/pages/adminHome/home.admin.page.modul
 import {FishAdminPageModule} from './admin/pages/fish/fish.admin.page.module';
 import {TankAdminPageModule} from './admin/pages/tank/tank.admin.page.module';
 import {SpeciesAdminPageModule} from './admin/pages/species/species.admin.page.module';
-import {FishnaticAdminPageModule} from './admin/pages/fishnatic/fishnatic.admin.page.module';
 import {AdminAdminPageModule} from './admin/pages/admin/admin.admin.page.module';
+import {FishnaticAdminPageModule} from './admin/pages/fishnatic/fishnatic.admin.page.module';
 
 import {StatsPageModule} from './pages/stats/stats.page.module';
 import {WelcomePageModule} from './pages/welcome/welcome.page.module';
@@ -151,8 +151,8 @@ if (environment.production) {
 		FishAdminPageModule,
 		TankAdminPageModule,
 		SpeciesAdminPageModule,
-		FishnaticAdminPageModule,
 		AdminAdminPageModule,
+		FishnaticAdminPageModule,
 		// % protected region % [Add any additional module imports here] off begin
 		// % protected region % [Add any additional module imports here] end
 		FrontendModule,
