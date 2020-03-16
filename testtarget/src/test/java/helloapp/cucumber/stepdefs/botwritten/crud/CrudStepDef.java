@@ -44,9 +44,9 @@ public class CrudStepDef extends AbstractStepDef {
 	@Inject
 	private SpeciesEntityFactory speciesEntityFactory;
 	@Inject
-	private FishnaticEntityFactory fishnaticEntityFactory;
-	@Inject
 	private AdminEntityFactory adminEntityFactory;
+	@Inject
+	private FishnaticEntityFactory fishnaticEntityFactory;
 
 	@Inject
 	private AdminPageFactory adminPageFactory;
@@ -147,11 +147,11 @@ public class CrudStepDef extends AbstractStepDef {
 			case "Species":
 				baseFactory = speciesEntityFactory;
 				break;
-			case "Fishnatic":
-				baseFactory = fishnaticEntityFactory;
-				break;
 			case "Admin":
 				baseFactory = adminEntityFactory;
+				break;
+			case "Fishnatic":
+				baseFactory = fishnaticEntityFactory;
 				break;
 			default:
 				throw new Exception(String.format("Unexpected entityName %s", entityName));

@@ -23,11 +23,11 @@
       <Validators xsi:type="springbotEntity:ValidatorRequired" Uuid="e7d798fe-f805-48d1-97f4-291359605e0a"/>
     </Attributes>
   </Entities>
-  <Entities xsi:type="springbotEntity:Entity" Uuid="89c81ed4-f557-4b78-88d3-1d29cfa02c93" Name="Fishnatic" DocoDescription="Fishnatic user">
-    <Behaviours xsi:type="springbotEntity:BehaviourUser" Uuid="a1504f3b-30fa-4ead-857c-91949d79208f"/>
-  </Entities>
   <Entities xsi:type="springbotEntity:Entity" Uuid="2ce88f1a-db7c-4126-9ce4-d472030d48ed" Name="Admin" DocoDescription="Admin user">
     <Behaviours xsi:type="springbotEntity:BehaviourUser" Uuid="db44b450-6681-4cb2-b246-7d39c52839e8"/>
+  </Entities>
+  <Entities xsi:type="springbotEntity:Entity" Uuid="89c81ed4-f557-4b78-88d3-1d29cfa02c93" Name="Fishnatic" DocoDescription="Fishnatic user">
+    <Behaviours xsi:type="springbotEntity:BehaviourUser" Uuid="a1504f3b-30fa-4ead-857c-91949d79208f"/>
   </Entities>
   <Enumerations xsi:type="springbotEntity:Enumeration" Uuid="dbb36bb7-08d5-4b01-981e-c8ea1f2be87a" Name="Born">
     <EnumLiterals xsi:type="springbotEntity:EnumLiteral" Uuid="ed9d3e61-48c8-48dd-a6a1-1a44bb83c7e4" Name="InHouse"/>

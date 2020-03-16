@@ -23,10 +23,10 @@ import {modelReducer as tankReducer} from './tank/tank.model.reducer';
 import {isTankModelAction} from './tank/tank.model.action';
 import {modelReducer as speciesReducer} from './species/species.model.reducer';
 import {isSpeciesModelAction} from './species/species.model.action';
-import {modelReducer as fishnaticReducer} from './fishnatic/fishnatic.model.reducer';
-import {isFishnaticModelAction} from './fishnatic/fishnatic.model.action';
 import {modelReducer as adminReducer} from './admin/admin.model.reducer';
 import {isAdminModelAction} from './admin/admin.model.action';
+import {modelReducer as fishnaticReducer} from './fishnatic/fishnatic.model.reducer';
+import {isFishnaticModelAction} from './fishnatic/fishnatic.model.action';
 import {modelReducer as roleReducer} from './role/role.model.reducer';
 import {isRoleModelAction} from './role/role.model.action';
 import {modelReducer as privilegeReducer} from './privilege/privilege.model.reducer';
@@ -50,11 +50,11 @@ export function modelReducer(modelState: ModelState, action: Action): ModelState
 	if (isSpeciesModelAction(action.type)) {
 		return speciesReducer(modelState, action);
 	}
-	if (isFishnaticModelAction(action.type)) {
-		return fishnaticReducer(modelState, action);
-	}
 	if (isAdminModelAction(action.type)) {
 		return adminReducer(modelState, action);
+	}
+	if (isFishnaticModelAction(action.type)) {
+		return fishnaticReducer(modelState, action);
 	}
 	if (isRoleModelAction(action.type)) {
 		return roleReducer(modelState, action);

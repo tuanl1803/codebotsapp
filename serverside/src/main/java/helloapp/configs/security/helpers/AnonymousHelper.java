@@ -82,16 +82,6 @@ public final class AnonymousHelper {
 		);
 		authorities.add(speciesAuthority);
 
-		CustomGrantedAuthority fishnaticAuthority = new CustomGrantedAuthority(
-				"ROLE_FISHNATIC",
-				"FishnaticEntity",
-				true,
-				true,
-				true,
-				true
-		);
-		authorities.add(fishnaticAuthority);
-
 		CustomGrantedAuthority adminAuthority = new CustomGrantedAuthority(
 				"ROLE_ADMIN",
 				"AdminEntity",
@@ -101,6 +91,16 @@ public final class AnonymousHelper {
 				true
 		);
 		authorities.add(adminAuthority);
+
+		CustomGrantedAuthority fishnaticAuthority = new CustomGrantedAuthority(
+				"ROLE_FISHNATIC",
+				"FishnaticEntity",
+				true,
+				true,
+				true,
+				true
+		);
+		authorities.add(fishnaticAuthority);
 
 		CustomGrantedAuthority roleAuthority = new CustomGrantedAuthority(
 				"ROLE_ROLE",
