@@ -22,7 +22,7 @@ Any changes out side of "protected regions" will be lost next time the bot makes
 	<h2>Fish</h2>
 	<!-- % protected region % [Customise your header] end -->
 	<!--Collection component-->
-	<!-- % protected region % [Customise your collection here] off begin -->
+	<!-- % protected region % [Customise your collection here] on begin -->
 	<cb-collection
 		*ngIf="!targetModel"
 		[models]="fishs | async"
@@ -44,6 +44,15 @@ Any changes out side of "protected regions" will be lost next time the bot makes
 		(prev)="onPrevPageRequested()"
 		(next)="onNextPageRequested()"
 		(last)="onLastPageRequested()">
+		<div customFilterQuestions>
+			<cb-custom-reference-filter
+				[name]="'Fish Species'"
+				[label]="'Fish Species'"
+				[formControl]="speciesReferenceFilterFormControl"
+				[viewRef]="viewRef"
+				[modalComponent]="speciesReferenceFilterComponent">
+			</cb-custom-reference-filter>
+		</div>
 	</cb-collection>
 	<!-- % protected region % [Customise your collection here] end -->
 	<!--Middle resizeable bar-->

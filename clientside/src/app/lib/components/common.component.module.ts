@@ -51,6 +51,7 @@ import {FileUploadComponent} from './fileUpload/file.upload.component';
 import {TabGroupComponent} from './tab/tab-group.component';
 import {TabComponent} from './tab/tab.component';
 import {AccordionComponent, AccordionInfoDirective} from './accordion/accordion.component';
+import { CustomReferenceFilterComponent } from './custom-reference-filter/custom-reference-filter.component';
 
 // % protected region % [Add any additional imports here] off begin
 // % protected region % [Add any additional imports here] end
@@ -86,7 +87,8 @@ import {AccordionComponent, AccordionInfoDirective} from './accordion/accordion.
 		TabComponent,
 		AccordionComponent,
 		AccordionInfoDirective,
-		// % protected region % [Add any additional declaration here] off begin
+		// % protected region % [Add any additional declaration here] on begin
+		CustomReferenceFilterComponent,
 		// % protected region % [Add any additional declaration here] end
 	],
 	imports: [
@@ -127,7 +129,8 @@ import {AccordionComponent, AccordionInfoDirective} from './accordion/accordion.
 		FileUploadComponent,
 		TabGroupComponent,
 		TabComponent,
-		// % protected region % [Add any additional exports here] off begin
+		// % protected region % [Add any additional exports here] on begin
+		CustomReferenceFilterComponent,
 		// % protected region % [Add any additional exports here] end
 	],
 	providers: [
