@@ -24,7 +24,9 @@ import {FishService} from '../../../services/fish/fish.service';
 import {FishTileCrudComponent} from './fish.tile.crud.component';
 import {RoleGuard} from '../../../lib/guards/role.guard';
 
-// % protected region % [Add any additional imports here] off begin
+// % protected region % [Add any additional imports here] on begin
+import { TankFilterComponent } from './filter/tank-filter/tank-filter.component';
+import {ReactiveFormsModule} from '@angular/forms'
 // % protected region % [Add any additional imports here] end
 
 const rolesAllowedToRead = [
@@ -103,7 +105,8 @@ const appRoutes: Routes = [
 @NgModule({
 	declarations: [
 		FishTileCrudComponent,
-		// % protected region % [Add any additional declaration here] off begin
+		// % protected region % [Add any additional declaration here] on begin
+		TankFilterComponent,
 		// % protected region % [Add any additional declaration here] end
 	],
 	imports: [
@@ -124,7 +127,11 @@ const appRoutes: Routes = [
 		// % protected region % [Add any additional providers here] off begin
 		// % protected region % [Add any additional providers here] end
 	],
-	// % protected region % [Add any additional module configurations here] off begin
+	// % protected region % [Add any additional module configurations here] on begin
+	entryComponents: [
+		TankFilterComponent,
+	]
+
 	// % protected region % [Add any additional module configurations here] end
 })
 export class FishTileCrudModule {

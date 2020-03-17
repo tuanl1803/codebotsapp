@@ -55,7 +55,8 @@ import {FilterQuestion, FilterQuestionType} from '../../../lib/components/collec
 import {createReactiveFormFromModel} from '../../../lib/models/model-utils';
 import {AuthenticationService} from '../../../lib/services/authentication/authentication.service';
 
-// % protected region % [Add any additional imports here] off begin
+// % protected region % [Add any additional imports here] on begin
+import { TankFilterComponent } from './filter/tank-filter/tank-filter.component';
 // % protected region % [Add any additional imports here] end
 
 /**
@@ -418,14 +419,17 @@ export class FishTileCrudComponent implements OnInit {
 	 */
 	isViewOnly: boolean = false;
 
-	// % protected region % [Add any additional class fields here] off begin
+	// % protected region % [Add any additional class fields here] on begin
+	tankFilterComponent = TankFilterComponent;
+	tankFilterFormControl = new FormControl();
 	// % protected region % [Add any additional class fields here] end
 
 	constructor(
 		private readonly store: Store<{ model: FishModelState }>,
 		private readonly routerStore: Store<{ router: RouterState }>,
 		private authenticationService: AuthenticationService,
-		// % protected region % [Add any additional constructor parameters here] off begin
+		// % protected region % [Add any additional constructor parameters here] on begin
+		public readonly viewRef : ViewContainerRef,
 		// % protected region % [Add any additional constructor parameters here] end
 	) {
 		// % protected region % [Add any additional constructor logic before the main body here] off begin
@@ -743,7 +747,14 @@ export class FishTileCrudComponent implements OnInit {
 
 		this.filterConditions = FishModel.convertFilterToCondition($event.filterFormGroup);
 
-		// % protected region % [Add any additional onCollectionFilter logic before constructing a state config here] off begin
+		// % protected region % [Add any additional onCollectionFilter logic before constructing a state config here] on begin
+		if(this.tankFilterFormControl.value){
+			this.filterConditions.push([{
+				path:'id',
+				operation: QueryOperation.EQUAL,
+				value: this.tankFilterFormControl.value
+			}]);
+		}
 		// % protected region % [Add any additional onCollectionFilter logic before constructing a state config here] end
 
 		let stateConfig: PassableStateConfig<FishModel> = {
