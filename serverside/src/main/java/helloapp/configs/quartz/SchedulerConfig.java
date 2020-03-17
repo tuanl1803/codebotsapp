@@ -37,8 +37,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 
-// % protected region % [Add any additional imports here] off begin
+// % protected region % [Add any additional imports here] on begin
 import helloapp.jobs.SimpleJob;
+import helloapp.jobs.TankCheckJob;
 // % protected region % [Add any additional imports here] end
 
 @Configuration
