@@ -1,0 +1,38 @@
+<section class="crud-component">
+	<h2>Fishs</h2>
+	<cb-collection
+		*ngIf="!targetModel"
+		[models]="fishs | async"
+		[pageIndex]="pageIndex"
+		[isLastPage]="isLastPage"
+		[headerOptions]="headerOptions"
+		[filterQuestions]="filterQuestions"
+		[itemActions]="itemActions"
+		[collectionActions]="collectionActions"
+		[multipleItemsActions]="multipleItemsActions"
+		[loadingType]="loadingType"
+		(itemActionClick)="onItemActionClicked($event)"
+		(collectionActionClick)="onCollectionActionClicked($event)"
+		(multipleItemsActionClick)="onMultipleItemsActionClicked($event)"
+		[hideCheckbox]="true"
+		(sort)="onCollectionSort($event)"
+		(filter)="onCollectionFilter($event)"
+		(search)="onCollectionSearch($event)"
+		(first)="onFirstPageRequested()"
+		(prev)="onPrevPageRequested()"
+		(next)="onNextPageRequested()"
+		(last)="onLastPageRequested()">
+	</cb-collection>
+	<!--Middle resizeable bar-->
+	<div *ngIf="!targetModel" class="crud__resize-bar"></div>
+	<cb-crud-create-edit
+		*ngIf="targetModel"
+		[model]="targetModel"
+		[modelFormGroup]="modelFormGroup"
+		[modelProperties]="modelProperties"
+		[modelRelations] = "modelRelations"
+		(createOrSaveClick)="onCreateOrSaveClicked($event)"
+		(cancelClick)="onCancelClicked()"
+		[audits]="fishAudits$ | async">
+	</cb-crud-create-edit>
+</section>

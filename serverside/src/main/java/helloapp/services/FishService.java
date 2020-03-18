@@ -53,6 +53,8 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 import java.time.OffsetDateTime;
 
+import static helloapp.graphql.utils.QueryOperation.equal;
+
 // % protected region % [Add any additional imports here] off begin
 // % protected region % [Add any additional imports here] end
 
@@ -567,6 +569,13 @@ public class FishService extends AbstractService<FishEntity, FishRepository, Fis
 				break;
 			case "speciesId":
 				predicate = entity.species.id.eq(UUID.fromString(condition.getValue()));
+				break;
+			case "tankId":
+				switch (condition.getOperation()) {
+					case equal:
+						predicate = entity.tank.id.eq(UUID.fromString(condition.getValue()));
+						break;
+				}
 				break;
 
 			// % protected region % [Add any additional cases for the custom query parameters here] end

@@ -24,7 +24,8 @@ import {TankService} from '../../../services/tank/tank.service';
 import {TankTileCrudComponent} from './tank.tile.crud.component';
 import {RoleGuard} from '../../../lib/guards/role.guard';
 
-// % protected region % [Add any additional imports here] off begin
+// % protected region % [Add any additional imports here] on begin
+import { FishListComponent } from './custom-list/fish-list/fish-list.component';
 // % protected region % [Add any additional imports here] end
 
 const rolesAllowedToRead = [
@@ -103,7 +104,8 @@ const appRoutes: Routes = [
 @NgModule({
 	declarations: [
 		TankTileCrudComponent,
-		// % protected region % [Add any additional declaration here] off begin
+		// % protected region % [Add any additional declaration here] on begin
+		FishListComponent,
 		// % protected region % [Add any additional declaration here] end
 	],
 	imports: [
@@ -111,7 +113,7 @@ const appRoutes: Routes = [
 		CommonComponentModule,
 		CommonPipeModule,
 		RouterModule.forChild(appRoutes),
-		// % protected region % [Add any additional module imports here] off begin
+		// % protected region % [,Add any additional module imports here] on begin
 		// % protected region % [Add any additional module imports here] end
 	],
 	exports: [
@@ -122,6 +124,7 @@ const appRoutes: Routes = [
 	providers: [
 		TankService,
 		// % protected region % [Add any additional providers here] off begin
+
 		// % protected region % [Add any additional providers here] end
 	],
 	// % protected region % [Add any additional module configurations here] off begin

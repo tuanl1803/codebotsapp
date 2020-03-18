@@ -63,6 +63,7 @@ Any changes out side of "protected regions" will be lost next time the bot makes
 		[isDisabled]="isViewOnly"
 		[audits]="tankAudits$ | async">
 	</cb-crud-create-edit>
+	<cb-fish-list *ngIf="targetModel && targetModel.id != undefined" [tankId]="targetModel.id"></cb-fish-list>
 	<!-- % protected region % [Customise your crud tile here] end -->
 </section>
 <!-- % protected region % [Add any additional HTML structure after the main body here] off begin -->

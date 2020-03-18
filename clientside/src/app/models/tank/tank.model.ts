@@ -273,7 +273,8 @@ export class TankModel extends AbstractModel {
 					// % protected region % [Add other validators for Fish tank here] off begin
 					// % protected region % [Add other validators for Fish tank here] end
 				],
-				// % protected region % [Add any additional field for relation Fish tank here] off begin
+				// % protected region % [Add any additional field for relation Fish tank here] on begin
+				hideElement: true,
 				// % protected region % [Add any additional field for relation Fish tank here] end
 			},
 		};
